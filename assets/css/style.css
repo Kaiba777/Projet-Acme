@@ -1,0 +1,307 @@
+:root {
+    --color1: #35424a;
+    --color2: white;
+    --color3: #e8491d;
+    --color4: #cccccc;
+    --color5: black;
+    --color6: #f4f4f4;
+    --color7: #e6e6e6;
+}
+
+@font-face {
+    font-family: "font", sans-serif;
+    src: url(../fonte/InstrumentSerif-Italic.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--color2);
+    font-family: "font";
+}
+
+body{
+    background: var(--color6);
+}
+
+/************************ header *****************************/
+header {
+    background: var(--color1);
+    height: 100px;
+    border-bottom: 5px solid var(--color3);
+}
+
+header .header-container {
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1070px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.header-container #branding{
+    color: var(--color3);
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+ul li:nth-child(1) {
+    margin-right: 25px;
+}
+
+ul li:nth-child(2) {
+    margin-right: 25px;
+}
+ul li {
+    list-style: none;
+}
+
+li a {
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+/********************** Indique sur quel page on se trouve ***************/
+li a:hover:not(#active) {
+    color: var(--color4);
+    font-size: 1.3rem;
+}
+#active {
+    color: var(--color3);
+    font-weight: 500;
+}
+
+
+/*********************************** showcase *****************************/
+.showcase {
+    background: url(../img/showcase.jpg) center/cover;
+    height: 400px;
+}
+
+.showcase .showcase-container {
+    margin: 0 auto;
+    text-align: center;
+    background: transparent;
+    align-items: center;
+    padding: 70px;
+    padding-top: 100px;
+}
+
+.showcase-container h1 {
+    text-transform: capitalize;
+    font-size: 3.5rem;
+}
+
+.showcase-container p{
+    font-size: 1.5rem;
+}
+
+
+/***************************** newsletter *********************************/
+.newsletter {
+    background: var(--color1);
+    height: 100px;
+}
+
+.newsletter .newsletter-container {
+    margin: 0 auto;
+    max-width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.newsletter-container h3 {
+    text-transform: capitalize;
+    font-size: 1.7rem;
+}
+
+#form1 input {
+    height: 40px;
+}
+
+#form1 input:nth-child(1) {
+    width: 250px;
+    color: var(--color5);
+    font-size: 0.9rem;
+}
+
+#form1 input:nth-child(2) {
+    width: 100px;
+    background: var(--color3);
+    border: none;
+}
+
+/******************************* boxes *****************************/
+.boxes {
+    background: var(--color6);
+    height: 300px;
+
+}
+
+.boxes .boxes-container {
+    width: 1000px;
+    margin: 0 auto;
+    height: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+}
+
+.boxes-container .box {
+    text-align: center;
+    margin-top: 10px;
+    background: transparent;
+}
+
+.boxes-container .box:nth-child(1) {
+    margin-right: 35px;
+}
+
+.boxes-container .box:nth-child(1) {
+    margin-right: 35px;
+}
+
+.box img {
+    margin-bottom: 20px;
+}
+
+.box h3 {
+    font-size: 1.2rem;
+}
+
+.box h3, .box p {
+    color: var(--color5);
+    margin-bottom: 25px;
+}
+
+
+/********************************** footer ****************************/
+footer {
+    height: 100px;
+    background: var(--color3);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+}
+
+footer p {
+    font-size: 1.2rem;
+    margin: 0 auto;
+}
+
+
+/********************************** main de la page apropos ********************************/
+.main {
+    background: var(--color6);
+    margin-bottom: 25px;
+}
+
+.main .main-container {
+    width: 1000px;
+    margin: 0 auto;
+    background: transparent;
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+.main-container .about-container {
+    margin-right: 40px;
+}
+
+.about-container h3 {
+    color: var(--color5);
+    margin: 20px 0;
+    font-size: 1.2rem;
+}
+
+.about-container .infos-container {
+    text-align: justify;
+}
+
+.infos-container p:nth-child(1){
+    color: var(--color5);
+    line-height: 23px;
+    margin-bottom: 15px;
+}
+
+.infos-container p:nth-child(2){
+    color: var(--color2);
+    background: var(--color1);
+    line-height: 23px;
+    padding: 15px;
+}
+
+.main-container .what {
+    background: var(--color1);
+    height: 250px;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.what h3 {
+    margin: 20px 0;
+}
+
+.what p {
+    line-height: 23px;
+}
+
+/****************************************** services de la page services **********************************/
+.services {
+    background: var(--color6);
+    margin-bottom: 20px;
+}
+
+.services .services-container {
+    width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 65% 35%;
+}
+
+
+.services-content >h3 {
+    color: var(--color5);
+    margin: 20px 0;
+}
+
+.services-content li {
+    list-style: none;
+    background: var(--color7);
+    height: 200px;
+    margin-bottom: 5px;
+    width: 629.69px;
+    border: 1px solid rgb(184, 158, 158);
+    padding: 20px;
+    text-align: justify;
+    
+}
+
+li h3 {
+    color: var(--color5);
+    margin: 10px 0 20px 0;
+}
+
+li p {
+    color: var(--color5);
+}
+
+li #prime {
+    margin-top: 15px;
+}
+
+.services-container .registre {
+    background: var(--color1);
+}
+
