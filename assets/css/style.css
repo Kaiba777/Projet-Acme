@@ -30,6 +30,7 @@ header {
     background: var(--color1);
     height: 100px;
     border-bottom: 5px solid var(--color3);
+    width: 100%;
 }
 
 header .header-container {
@@ -223,6 +224,7 @@ footer p {
     color: var(--color5);
     margin: 20px 0;
     font-size: 1.2rem;
+    text-transform: capitalize;
 }
 
 .about-container .infos-container {
@@ -305,3 +307,42 @@ li #prime {
     background: var(--color1);
 }
 
+.registre {
+    height: 350px;
+    margin: 20px 0 0 20px;
+}
+
+.registre .registre-container {
+    margin: 20px;
+}
+
+.registre-container h3 {
+    margin: 15px 0 20px 0;
+}
+
+#form2 label {
+    margin-left: 2px;
+}
+
+#form2 input[type="text"], #form2 input[type="email"], #form2 textarea {
+    width: 100%;
+    color: var(--color5);
+}
+
+#form2 input[type="text"], #form2 input[type="email"] {
+    height: 30px;
+}
+
+#form2 input[type="text"]::placeholder, #form2 input[type="email"]::placeholder, #form2 textarea::placeholder {
+    padding-left: 5px;
+}
+
+#form2 textarea::placeholder {
+    padding-top: 5px;
+}
+
+#form2 input[type="submit"] {
+    padding: 10px;
+    background: var(--color3);
+    border: none;
+}
